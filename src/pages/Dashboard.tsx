@@ -1,20 +1,18 @@
 import React from "react";
 import "./Dashboard.css";
-import { SignOut } from "../firebase";
+import Perfil from "../components/Popover";
 
 export default function Dashboard(props: any) {
   return (
     <>
       <nav>
-        <div className="esq">
-          <h1>Dashboard</h1>
-        </div>
-        <div className="dir">
-          <p>Olá, {localStorage.getItem("nome")}!</p>
-          <img src={props.foto} alt="Foto" />
-          <button className="sair" onClick={SignOut}>
-            Sair
-          </button>
+        <div className="wrapper">
+          <div className="esq">
+            <h1>Dashboard</h1>
+          </div>
+          <div className="dir">
+            <Perfil img={<img src={props.foto} alt="Foto" />} />
+          </div>
         </div>
       </nav>
     </>

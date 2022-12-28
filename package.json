@@ -10,7 +10,12 @@
     "skr": "npm run dev"
   },
   "dependencies": {
+    "@chakra-ui/react": "^2.4.5",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@radix-ui/react-popover": "^1.0.2",
     "firebase": "^9.15.0",
+    "framer-motion": "^8.0.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.5.0"
