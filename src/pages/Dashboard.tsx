@@ -2,7 +2,7 @@ import React from "react";
 import "./Dashboard.css";
 import { SignOut } from "../firebase";
 
-export default function Dashboard() {
+export default function Dashboard(props: any) {
   return (
     <>
       <nav>
@@ -10,7 +10,8 @@ export default function Dashboard() {
           <h1>Dashboard</h1>
         </div>
         <div className="dir">
-          <p>{localStorage.getItem("nome")}</p>
+          <p>Olá, {localStorage.getItem("nome")}!</p>
+          <img src={props.foto} alt="Foto" />
           <button className="sair" onClick={SignOut}>
             Sair
           </button>

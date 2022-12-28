@@ -10,7 +10,10 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
-        <Route path="/dashboard" element={<Dashboard />} />
+        <Route
+          path="/dashboard"
+          element={<Dashboard foto={localStorage.getItem("foto")} />}
+        />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
     </Router>

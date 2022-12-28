@@ -3,7 +3,6 @@ import {
   onAuthStateChanged,
   signInWithPopup,
 } from "firebase/auth";
-// import { useEffect } from "react";
 import { auth } from "../firebase";
 
 const provider = new GoogleAuthProvider();
